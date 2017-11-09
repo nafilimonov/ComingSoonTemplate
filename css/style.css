@@ -5,26 +5,24 @@ html, body {
 }
 body{
 	color: #FFFFFF;
-	font-family: Tahoma;
 	font-size: 14pt;
 	line-height: 18pt;
+	font-family: "roboto-slab",serif;
+	font-style: normal;
+	font-weight: 200;
+}
+a, a:hover, a:active, a:focus {
+    color: #fff;
+}
+a > i {
+    margin: 0 7px;
 }
 .page-image {
     background: url(../img/page-image.jpg) no-repeat center center;
     background-size: cover;
     height: 100%;
     width: 100%;
-    min-height: 700px;
-}
-
-a {
-    color: #791a1f;
-}
-a.link-white, a.link-white:hover, a.link-white:active, a.link-white:focus {
-    color: #fff;
-}
-a > i {
-    margin: 0 7px;
+    min-height: 500px;
 }
 .overlay-opacity {
     filter: alpha(opacity=50);
@@ -34,7 +32,7 @@ a > i {
     position: fixed;
     top: 0;
     height: 100%;
-    min-height: 700px;
+    min-height: 500px;
     width: 100%;
 }
 .bg-black {
@@ -42,14 +40,13 @@ a > i {
 }
 
 #coming-soon{
-	background: rgba(0,0,0,0.0);
 	display: block;
 	position: absolute;
 	width: 800px;
-	height: 260px;
+	height: 400px;
 	top: 50%;
 	left: 50%;
-	margin: -130px 0 0 -400px;
+	margin: -200px 0 0 -400px;
 	text-align: center;
 }
 #coming-soon h1{
@@ -64,4 +61,31 @@ a > i {
 }
 #coming-soon .social-media-links {
 	margin-top: 20px;
+}
+
+@media only screen and (max-width : 900px) {
+	#coming-soon{
+		width: 600px;
+		height: 400px;
+		margin: -200px 0 0 -300px;
+	}
+	#coming-soon .logo img{
+		width: 100%
+	}
+}
+
+@media only screen and (max-width : 700px) {
+	#coming-soon{
+		width: 400px;
+		height: 400px;
+		margin: -200px 0 0 -200px;
+	}
+}
+
+@media only screen and (max-width : 500px) {
+	#coming-soon{
+		width: 300px;
+		height: 400px;
+		margin: -200px 0 0 -150px;
+	}
 }
